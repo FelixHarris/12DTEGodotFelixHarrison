@@ -13,3 +13,11 @@ shape = SubResource("CapsuleShape3D_p2n6r")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47357, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+light_energy = 5.284
+light_indirect_energy = 2.399
+spot_angle = 21.8063

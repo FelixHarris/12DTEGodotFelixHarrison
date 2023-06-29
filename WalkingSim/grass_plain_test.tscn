@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://4tlk81wnq7ql"]
+
+[ext_resource type="PackedScene" uid="uid://mr5gt3kyqoi3" path="res://GrassPlain.blend" id="1_o3lik"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o0m3d"]
+load_path = "res://.godot/imported/texture-grass.jpg-dbc193120a02f5cb28454f799a7510fd.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ho7bk"]
+albedo_texture = SubResource("CompressedTexture2D_o0m3d")
+uv1_scale = Vector3(120, 120, 120)
+
+[node name="GrassPlain" instance=ExtResource("1_o3lik")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ho7bk")
