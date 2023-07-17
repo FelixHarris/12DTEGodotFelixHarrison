@@ -17,7 +17,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47357, 0)
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
-light_energy = 5.284
-light_indirect_energy = 2.399
-spot_angle = 21.8063
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.411458)
+light_energy = 3.786
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.5
+light_specular = 0.145
+shadow_enabled = true
+shadow_bias = 0.965
+shadow_normal_bias = 10.0
+shadow_transmittance_bias = -7.875
+shadow_blur = 6.311
+distance_fade_enabled = true
+distance_fade_begin = 13.0
+distance_fade_shadow = 24.15
+spot_range = 20.509
+spot_angle = 33.42
