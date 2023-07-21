@@ -38,6 +38,7 @@ func check_ray_hit():
 		if Input.is_action_just_pressed("use"):
 			ray.get_collider().queue_free()
 			relics_destroyed += 1
+			collection_tracker.text = "RELICS : " + str(relics_destroyed) + " / 6"
 	else:
 		interaction_notifier.visible = false
 
