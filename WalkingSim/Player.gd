@@ -30,6 +30,8 @@ func _unhandled_input(event):
 		$Camera3D.rotation.x = clamp($Camera3D.rotation.x, -1.2,1.2)
 
 
+
+
 func check_ray_hit():
 	if ray.is_colliding():
 		var collider = ray.get_collider()
