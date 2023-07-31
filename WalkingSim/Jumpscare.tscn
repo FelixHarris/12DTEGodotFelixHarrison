@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://1btpyutqcmyb"]
 
-[ext_resource type="Texture2D" uid="uid://bwoqhvgiw77en" path="res://885570fdbd4a49b0e23360b64f3003ca.jpg" id="1_8u3ju"]
+[ext_resource type="Texture2D" uid="uid://cddrktq55tkhj" path="res://885570fdbd4a49b0e23360b64f3003ca.png" id="1_32rnb"]
 [ext_resource type="Script" path="res://jumpscare.gd" id="2_8ix26"]
 
 [node name="Jumpscare" type="Sprite3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0121694, 0, 0.0323725)
-texture = ExtResource("1_8u3ju")
+texture = ExtResource("1_32rnb")
 script = ExtResource("2_8ix26")

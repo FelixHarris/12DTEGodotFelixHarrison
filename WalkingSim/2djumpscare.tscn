@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://hdl3ch6xaun0"]
+
+[ext_resource type="Texture2D" uid="uid://bwoqhvgiw77en" path="res://885570fdbd4a49b0e23360b64f3003ca.jpg" id="1_118lk"]
+
+[node name="2djumpscare" type="Sprite2D"]
+position = Vector2(577, 327.5)
+scale = Vector2(1.94667, 1.7)
+texture = ExtResource("1_118lk")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
