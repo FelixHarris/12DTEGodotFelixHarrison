@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://0o0mtn01w0c"]
+[gd_scene load_steps=6 format=3 uid="uid://0o0mtn01w0c"]
 
+[ext_resource type="Script" path="res://Enemy.gd" id="1_ki828"]
 [ext_resource type="Texture2D" uid="uid://bpjfitm435pxf" path="res://kenney_prototype-textures/PNG/Purple/texture_07.png" id="1_vw5xv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i6g8v"]
@@ -9,7 +10,8 @@ albedo_texture = ExtResource("1_vw5xv")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j7k8i"]
 
-[node name="Node3D" type="CharacterBody3D"]
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_ki828")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_i6g8v")
@@ -17,3 +19,5 @@ shape = SubResource("CapsuleShape3D_i6g8v")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 material_override = SubResource("StandardMaterial3D_a1cvx")
 mesh = SubResource("CapsuleMesh_j7k8i")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
