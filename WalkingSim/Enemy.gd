@@ -21,7 +21,7 @@ func _physics_process(delta):
 	var current_position = global_position
 	var next_position = nav_agent.get_next_path_position()
 	var new_velocity = next_position - current_position
-	new_velocity = new_velocity.normalzed() * movement_speed
+	new_velocity = new_velocity.normalized() * movement_speed
 	
 	velocity = new_velocity
 	move_and_slide()
