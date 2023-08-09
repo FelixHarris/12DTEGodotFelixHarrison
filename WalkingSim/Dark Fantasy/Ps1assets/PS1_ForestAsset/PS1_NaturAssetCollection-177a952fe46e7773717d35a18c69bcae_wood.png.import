@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c71d0dhw6ekqe"
-path.s3tc="res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png-70cf86a062dc093b0496af2299ab5879.s3tc.ctex"
+path.s3tc="res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png-86f9e1cb4a76a3594bca3b0c03a48512.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_ForestAsset/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png"
-dest_files=["res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png-70cf86a062dc093b0496af2299ab5879.s3tc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_ForestAsset/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png"
+dest_files=["res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_wood.png-86f9e1cb4a76a3594bca3b0c03a48512.s3tc.ctex"]
 
 [params]
 

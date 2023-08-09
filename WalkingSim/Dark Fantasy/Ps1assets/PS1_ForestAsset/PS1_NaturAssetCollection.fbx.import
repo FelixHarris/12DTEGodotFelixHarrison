@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ct6umuhrqtit7"
-path="res://.godot/imported/PS1_NaturAssetCollection.fbx-177a952fe46e7773717d35a18c69bcae.scn"
+path="res://.godot/imported/PS1_NaturAssetCollection.fbx-ac71bdfe6cf922fbd01f7f1b707df542.scn"
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_ForestAsset/PS1_NaturAssetCollection.fbx"
-dest_files=["res://.godot/imported/PS1_NaturAssetCollection.fbx-177a952fe46e7773717d35a18c69bcae.scn"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_ForestAsset/PS1_NaturAssetCollection.fbx"
+dest_files=["res://.godot/imported/PS1_NaturAssetCollection.fbx-ac71bdfe6cf922fbd01f7f1b707df542.scn"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0wqkryhvbv3v"
-path="res://.godot/imported/128xBlueLich_Ref.png-89854d5342c4c48f7303fca29d76a6e1.ctex"
+path="res://.godot/imported/128xBlueLich_Ref.png-c7d38ce42996c7bd729f260092826ea7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_StarkCraftsLogo/128xBlueLich_Ref.png"
-dest_files=["res://.godot/imported/128xBlueLich_Ref.png-89854d5342c4c48f7303fca29d76a6e1.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_StarkCraftsLogo/128xBlueLich_Ref.png"
+dest_files=["res://.godot/imported/128xBlueLich_Ref.png-c7d38ce42996c7bd729f260092826ea7.ctex"]
 
 [params]
 

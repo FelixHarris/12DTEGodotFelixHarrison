@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bep6jin0810ld"
-path="res://.godot/imported/PS1_PalastAssetCollection.fbx-7b1ccfb199761def45ad295987e1e2b1.scn"
+path="res://.godot/imported/PS1_PalastAssetCollection.fbx-51263fb59135e19e07fff892fa168b00.scn"
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Palast_Assets/PS1_PalastAssetCollection.fbx"
-dest_files=["res://.godot/imported/PS1_PalastAssetCollection.fbx-7b1ccfb199761def45ad295987e1e2b1.scn"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Palast_Assets/PS1_PalastAssetCollection.fbx"
+dest_files=["res://.godot/imported/PS1_PalastAssetCollection.fbx-51263fb59135e19e07fff892fa168b00.scn"]
 
 [params]
 

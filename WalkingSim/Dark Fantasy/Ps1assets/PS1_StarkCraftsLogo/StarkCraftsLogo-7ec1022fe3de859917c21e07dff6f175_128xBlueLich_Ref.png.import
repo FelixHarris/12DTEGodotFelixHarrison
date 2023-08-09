@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvly7ijshcbm2"
-path.s3tc="res://.godot/imported/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png-1b7876ebfc0ad6095b771a48180fa35e.s3tc.ctex"
+path.s3tc="res://.godot/imported/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png-e7b9cf9e769fe3284d36ce751a417e68.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_StarkCraftsLogo/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png"
-dest_files=["res://.godot/imported/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png-1b7876ebfc0ad6095b771a48180fa35e.s3tc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_StarkCraftsLogo/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png"
+dest_files=["res://.godot/imported/StarkCraftsLogo-7ec1022fe3de859917c21e07dff6f175_128xBlueLich_Ref.png-e7b9cf9e769fe3284d36ce751a417e68.s3tc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjvmjscjkfetr"
-path="res://.godot/imported/SAM_9036.JPG-e7e61d8fc23c9f8f4bd31d886b7783dc.ctex"
+path="res://.godot/imported/SAM_9036.JPG-7bd716ae32b653765820c8905c45fbfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Palast_Assets/SAM_9036.JPG"
-dest_files=["res://.godot/imported/SAM_9036.JPG-e7e61d8fc23c9f8f4bd31d886b7783dc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Palast_Assets/SAM_9036.JPG"
+dest_files=["res://.godot/imported/SAM_9036.JPG-7bd716ae32b653765820c8905c45fbfc.ctex"]
 
 [params]
 

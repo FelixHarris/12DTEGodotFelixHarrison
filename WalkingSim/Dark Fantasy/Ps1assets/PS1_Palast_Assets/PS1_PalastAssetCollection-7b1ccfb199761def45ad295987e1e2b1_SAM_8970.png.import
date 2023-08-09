@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coxv3x3soipvg"
-path.s3tc="res://.godot/imported/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png-49517bcb7fb13f0724020521e5868377.s3tc.ctex"
+path.s3tc="res://.godot/imported/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png-a1b6d9d5fa16b54a2b32ebc03ce74ae3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Palast_Assets/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png"
-dest_files=["res://.godot/imported/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png-49517bcb7fb13f0724020521e5868377.s3tc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Palast_Assets/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png"
+dest_files=["res://.godot/imported/PS1_PalastAssetCollection-7b1ccfb199761def45ad295987e1e2b1_SAM_8970.png-a1b6d9d5fa16b54a2b32ebc03ce74ae3.s3tc.ctex"]
 
 [params]
 

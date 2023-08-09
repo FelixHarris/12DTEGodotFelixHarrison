@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://7vm6gdhgvnuy"
-path="res://.godot/imported/StarkCraftsLogo.fbx-7ec1022fe3de859917c21e07dff6f175.scn"
+path="res://.godot/imported/StarkCraftsLogo.fbx-9ce46d9e97f2ebc2733b7f26f8def82e.scn"
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_StarkCraftsLogo/StarkCraftsLogo.fbx"
-dest_files=["res://.godot/imported/StarkCraftsLogo.fbx-7ec1022fe3de859917c21e07dff6f175.scn"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_StarkCraftsLogo/StarkCraftsLogo.fbx"
+dest_files=["res://.godot/imported/StarkCraftsLogo.fbx-9ce46d9e97f2ebc2733b7f26f8def82e.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cg0xg7rq1i7po"
-path="res://.godot/imported/ps1_Sword.fbx-e24af7dc8d6cdea5300e0ae405d168e3.scn"
+path="res://.godot/imported/ps1_Sword.fbx-47f47d6c559fb13ab6e8b9b74f963d32.scn"
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Skull/ps1_Sword.fbx"
-dest_files=["res://.godot/imported/ps1_Sword.fbx-e24af7dc8d6cdea5300e0ae405d168e3.scn"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Skull/ps1_Sword.fbx"
+dest_files=["res://.godot/imported/ps1_Sword.fbx-47f47d6c559fb13ab6e8b9b74f963d32.scn"]
 
 [params]
 

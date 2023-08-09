@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2p6e8mttx1a1"
-path="res://.godot/imported/stonewall.JPG-c95d28802e9dd3642493746cf3742d81.ctex"
+path="res://.godot/imported/stonewall.JPG-df5c1e40a2133caec187e19e53a04de5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_ForestAsset/stonewall.JPG"
-dest_files=["res://.godot/imported/stonewall.JPG-c95d28802e9dd3642493746cf3742d81.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_ForestAsset/stonewall.JPG"
+dest_files=["res://.godot/imported/stonewall.JPG-df5c1e40a2133caec187e19e53a04de5.ctex"]
 
 [params]
 

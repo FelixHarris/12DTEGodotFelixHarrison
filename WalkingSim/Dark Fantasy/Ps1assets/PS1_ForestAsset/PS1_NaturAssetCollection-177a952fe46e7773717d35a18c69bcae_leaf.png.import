@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l8nw1epvga81"
-path.s3tc="res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png-21a5c91263036c988236b8809f7157f4.s3tc.ctex"
+path.s3tc="res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png-5db49fe9a2beaded2639a680affaf2d1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_ForestAsset/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png"
-dest_files=["res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png-21a5c91263036c988236b8809f7157f4.s3tc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_ForestAsset/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png"
+dest_files=["res://.godot/imported/PS1_NaturAssetCollection-177a952fe46e7773717d35a18c69bcae_leaf.png-5db49fe9a2beaded2639a680affaf2d1.s3tc.ctex"]
 
 [params]
 

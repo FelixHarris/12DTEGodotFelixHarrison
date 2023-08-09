@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brcq2ayh45d5w"
-path.s3tc="res://.godot/imported/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png-3b7b96c5145ad92e48c0b3126c0948c0.s3tc.ctex"
+path.s3tc="res://.godot/imported/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png-d9e17f1a1a3aff029e6f5bbe069eb8c0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Skull/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png"
-dest_files=["res://.godot/imported/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png-3b7b96c5145ad92e48c0b3126c0948c0.s3tc.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Skull/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png"
+dest_files=["res://.godot/imported/ps1_Sword-e24af7dc8d6cdea5300e0ae405d168e3_ps1_sword_128x128.png-d9e17f1a1a3aff029e6f5bbe069eb8c0.s3tc.ctex"]
 
 [params]
 

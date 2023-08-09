@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4vmgnpehucr0"
-path="res://.godot/imported/rock.jpg-c681850efc2fd656417c62c450fd829e.ctex"
+path="res://.godot/imported/rock.jpg-ddfc56a7a792eb5dda7ef3fc81610351.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_ForestAsset/rock.jpg"
-dest_files=["res://.godot/imported/rock.jpg-c681850efc2fd656417c62c450fd829e.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_ForestAsset/rock.jpg"
+dest_files=["res://.godot/imported/rock.jpg-ddfc56a7a792eb5dda7ef3fc81610351.ctex"]
 
 [params]
 

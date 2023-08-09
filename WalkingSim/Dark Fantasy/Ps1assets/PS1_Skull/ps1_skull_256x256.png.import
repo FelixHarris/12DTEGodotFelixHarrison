@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fw1vbohm87xq"
-path="res://.godot/imported/ps1_skull_256x256.png-f5d07b3c9f47a15075328635d47d38bb.ctex"
+path="res://.godot/imported/ps1_skull_256x256.png-da2dba6767456ddcdc6d217a5fef57aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PS1 Dark Fantasy Horror Game Assets (by Stark Crafts) (1)/PS1 Dark Fantasy Horror Game Assets (by Stark Crafts)/PS1_Skull/ps1_skull_256x256.png"
-dest_files=["res://.godot/imported/ps1_skull_256x256.png-f5d07b3c9f47a15075328635d47d38bb.ctex"]
+source_file="res://Dark Fantasy/Ps1assets/PS1_Skull/ps1_skull_256x256.png"
+dest_files=["res://.godot/imported/ps1_skull_256x256.png-da2dba6767456ddcdc6d217a5fef57aa.ctex"]
 
 [params]
 
