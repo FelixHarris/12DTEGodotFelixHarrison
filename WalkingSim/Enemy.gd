@@ -11,9 +11,14 @@ func _ready():
 	
 func get_target():
 	nav_agent.target_position = player.global_transform.origin
-	movement_speed *= 1.05
+	movement_speed *= 1.0005
 	
 func _physics_process(delta):
+	var direction_to_player = (player.global_transform.origin - global_transform.origin).normalized()
+	rotation_degrees.y = atan2(direction_to_player.x, direction_to_player.z) * 180.0 / PI
+	#look_at(player.global_position)
+	#rotation_degrees.x = 0
+	#rotation_degrees.z = 0
 	if nav_agent.is_navigation_finished():
 		get_target()
 	print(movement_speed)
