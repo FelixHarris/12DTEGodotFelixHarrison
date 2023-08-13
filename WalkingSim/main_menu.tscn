@@ -1,18 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://3vhwbkfth527"]
+[gd_scene load_steps=3 format=3 uid="uid://3vhwbkfth527"]
 
 [ext_resource type="Script" path="res://CanvasLayer.gd" id="1_5hhta"]
+[ext_resource type="Texture2D" uid="uid://vgttbonhdc2b" path="res://ForestAI1.jpg" id="1_k0nrd"]
 
 [node name="MainMenu" type="Node"]
 
 [node name="Background" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+texture = ExtResource("1_k0nrd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("1_5hhta")
 
 [node name="Main" type="Control" parent="CanvasLayer"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -67,6 +72,7 @@ size_flags_vertical = 3
 text = "Quit"
 
 [node name="Settings" type="Control" parent="CanvasLayer"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -109,3 +115,8 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 text = "Back"
+
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonQuit" to="CanvasLayer" method="_on_button_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettingsBack" to="CanvasLayer" method="_on_button_settings_back_pressed"]
