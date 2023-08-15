@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://dqheac0pxv4lp"]
 
-[ext_resource type="PackedScene" uid="uid://0o0mtn01w0c" path="res://Enemy.tscn" id="1_awhs3"]
 [ext_resource type="PackedScene" uid="uid://mr5gt3kyqoi3" path="res://GrassPlain.blend" id="1_okowr"]
 [ext_resource type="PackedScene" uid="uid://btof7qh5knxfb" path="res://Player.tscn" id="2_0a7rx"]
 [ext_resource type="Texture2D" uid="uid://bc8pki8pe0ruf" path="res://texture-grass.jpg" id="2_7qsno"]
 [ext_resource type="PackedScene" uid="uid://cfhgs64bfetkm" path="res://simple_grass_textured.tscn" id="2_awou2"]
+[ext_resource type="PackedScene" uid="uid://0o0mtn01w0c" path="res://Enemy.tscn" id="3_2cf47"]
 [ext_resource type="PackedScene" uid="uid://b7v68w3jj0eg4" path="res://dead_birch_1.tscn" id="7_65jxf"]
 [ext_resource type="Script" path="res://JumpScareTrigger.gd" id="8_412wn"]
 [ext_resource type="PackedScene" uid="uid://diaibowbaw35u" path="res://Destroy.tscn" id="8_bf5b2"]
@@ -29,7 +29,7 @@ sky_material = SubResource("ProceduralSkyMaterial_0neks")
 
 [sub_resource type="Environment" id="Environment_fcdde"]
 background_mode = 2
-background_energy_multiplier = 1.7
+background_energy_multiplier = 0.0
 sky = SubResource("Sky_6u8sn")
 tonemap_mode = 2
 glow_enabled = true
@@ -39,9 +39,6 @@ size = Vector3(1.84416, 2.26393, 1.72275)
 
 [node name="World" type="Node3D"]
 
-[node name="Enemy" parent="." instance=ExtResource("1_awhs3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.12318, 15.3593, 5.84636)
-
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_0cs34")
 
@@ -49,6 +46,9 @@ navigation_mesh = SubResource("NavigationMesh_0cs34")
 
 [node name="Plane" parent="NavigationRegion3D/GrassPlain" index="0"]
 surface_material_override/0 = SubResource("StandardMaterial3D_1adwf")
+
+[node name="Enemy" parent="." instance=ExtResource("3_2cf47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 15, 13)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 skeleton = NodePath("../NavigationRegion3D/GrassPlain")

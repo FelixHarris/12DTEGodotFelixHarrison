@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://3vhwbkfth527"]
+[gd_scene load_steps=4 format=3 uid="uid://3vhwbkfth527"]
 
 [ext_resource type="Script" path="res://CanvasLayer.gd" id="1_5hhta"]
 [ext_resource type="Texture2D" uid="uid://vgttbonhdc2b" path="res://ForestAI1.jpg" id="1_k0nrd"]
+[ext_resource type="FontFile" uid="uid://bc0w3ab8d8grf" path="res://feast-of-flesh-bb/fofbb_ital.otf" id="3_15ny0"]
 
 [node name="MainMenu" type="Node"]
 
@@ -9,6 +10,10 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -134.0
+offset_top = -116.0
+offset_right = 134.0
+offset_bottom = 116.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
@@ -33,7 +38,45 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Main/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/Main/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_15ny0")
+theme_override_font_sizes/font_size = 48
+text = "Gamename"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="CanvasLayer/Main/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_15ny0")
+theme_override_font_sizes/font_size = 28
+text = "Play"
+flat = true
+
+[node name="ButtonSettings" type="Button" parent="CanvasLayer/Main/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_15ny0")
+theme_override_font_sizes/font_size = 28
+text = "Settings"
+flat = true
+
+[node name="ButtonQuit" type="Button" parent="CanvasLayer/Main/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_15ny0")
+theme_override_font_sizes/font_size = 28
+text = "Quit"
+flat = true
+
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Main/CenterContainer"]
+visible = false
 custom_minimum_size = Vector2(512, 256)
 layout_mode = 2
 
@@ -43,33 +86,6 @@ theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="Label" type="Label" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 32
-text = "Gamename"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ButtonPlay" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Play"
-
-[node name="ButtonSettings" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Settings"
-
-[node name="ButtonQuit" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Quit"
 
 [node name="Settings" type="Control" parent="CanvasLayer"]
 visible = false
@@ -116,7 +132,7 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Back"
 
-[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
-[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]
-[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonQuit" to="CanvasLayer" method="_on_button_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonQuit" to="CanvasLayer" method="_on_button_quit_pressed"]
 [connection signal="pressed" from="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettingsBack" to="CanvasLayer" method="_on_button_settings_back_pressed"]

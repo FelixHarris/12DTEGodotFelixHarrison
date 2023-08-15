@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Enemy.gd" id="1_ki828"]
 [ext_resource type="Texture2D" uid="uid://bpjfitm435pxf" path="res://kenney_prototype-textures/PNG/Purple/texture_07.png" id="1_vw5xv"]
-[ext_resource type="PackedScene" uid="uid://brp06yfu1agvc" path="res://skeleton.tscn" id="2_g15gy"]
+[ext_resource type="PackedScene" uid="uid://cgv7l4h6ms5ep" path="res://skeleton.tscn" id="2_g15gy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i6g8v"]
 

@@ -15,13 +15,16 @@ run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=500
+window/size/viewport_height=280
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/simplegrasstextured/plugin.cfg")
-
-[filesystem]
-
-import/fbx/enabled=false
 
 [input]
 
