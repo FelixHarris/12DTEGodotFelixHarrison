@@ -105,6 +105,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Settings/CenterContainer"]
+self_modulate = Color(0, 0, 0, 0)
 custom_minimum_size = Vector2(512, 256)
 layout_mode = 2
 
@@ -121,7 +122,7 @@ theme_override_constants/separation = 8
 
 [node name="Label" type="Label" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_15ny0")
 theme_override_font_sizes/font_size = 32
 text = "Settings"
 horizontal_alignment = 1
@@ -129,7 +130,9 @@ vertical_alignment = 1
 
 [node name="ButtonSettingsBack" type="Button" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_15ny0")
 text = "Back"
 
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
