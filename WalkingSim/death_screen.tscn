@@ -144,3 +144,4 @@ text = "Back"
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonQuit" to="CanvasLayer" method="_on_button_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettingsBack" to="CanvasLayer" method="_on_button_settings_back_pressed"]
