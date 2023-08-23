@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4toagpuc5abe"]
+[gd_scene load_steps=3 format=3 uid="uid://c4toagpuc5abe"]
+
+[ext_resource type="PackedScene" uid="uid://cj6j1u8o4v51r" path="res://relic.tscn" id="1_bp5s3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_t6lrr"]
 
 [node name="Pickup" type="Area3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("BoxMesh_t6lrr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="StarkCraftsLogo" parent="." instance=ExtResource("1_bp5s3")]

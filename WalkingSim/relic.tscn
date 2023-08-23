@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj6j1u8o4v51r"]
+
+[ext_resource type="PackedScene" uid="uid://20x2fqnh0qhw" path="res://LowPolyModels/PS1_StarkCraftsLogo/StarkCraftsLogo.fbx" id="1_kfptf"]
+
+[node name="StarkCraftsLogo" instance=ExtResource("1_kfptf")]
