@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://btof7qh5knxfb"]
+[gd_scene load_steps=7 format=3 uid="uid://btof7qh5knxfb"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_685um"]
+[ext_resource type="PackedScene" uid="uid://bjb2262o7gm6r" path="res://Pause_menu.tscn" id="2_nbmf4"]
 [ext_resource type="PackedScene" uid="uid://jl4bc5w1x6s0" path="res://Low_Poly_Flashlight_v01/Mesh/flashLight.fbx" id="2_uokgc"]
 [ext_resource type="Texture2D" uid="uid://dc8qis0n1r56w" path="res://Low_Poly_Flashlight_v01/Textures/flashlight_base_color.png" id="3_f4q54"]
 
@@ -11,6 +12,8 @@ albedo_texture = ExtResource("3_f4q54")
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_685um")
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_nbmf4")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.990311, 0)

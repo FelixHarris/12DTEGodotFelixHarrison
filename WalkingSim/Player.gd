@@ -30,6 +30,14 @@ func _unhandled_input(event):
 		$Camera3D.rotation.x = clamp($Camera3D.rotation.x, -1.2,1.2)
 
 
+#func _input(event):
+#	if event.is_action_pressed("pause"):
+#		if get_tree().paused:
+#			resume()
+#		else:
+#			pause()
+	if event.is_action_pressed("ui_cancel"):
+		$PauseMenu.pause()
 
 
 func check_ray_hit():

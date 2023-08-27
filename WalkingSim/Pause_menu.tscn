@@ -1,20 +1,21 @@
-[gd_scene format=3 uid="uid://bjb2262o7gm6r"]
+[gd_scene load_steps=2 format=3 uid="uid://bjb2262o7gm6r"]
 
-[node name="ColorRect" type="ColorRect"]
+[ext_resource type="Script" path="res://Pause_menu.gd" id="1_wpyc8"]
+
+[node name="PauseMenu" type="ColorRect"]
+process_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
+script = ExtResource("1_wpyc8")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 256.0
 
 [node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
 custom_minimum_size = Vector2(512, 256)
@@ -38,11 +39,13 @@ horizontal_alignment = 1
 [node name="HSeparator" type="HSeparator" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="ResumeButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_font_sizes/font_size = 16
 text = "Resume"
 
-[node name="Button2" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Quit"
