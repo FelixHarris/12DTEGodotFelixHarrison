@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://diaibowbaw35u"]
+[gd_scene load_steps=5 format=3 uid="uid://diaibowbaw35u"]
 
 [ext_resource type="PackedScene" uid="uid://cj6j1u8o4v51r" path="res://relic.tscn" id="1_q1ybx"]
+[ext_resource type="PackedScene" uid="uid://h1tglpoqt4gt" path="res://fire.tscn" id="2_0nwgs"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_t6lrr"]
 
@@ -16,3 +17,5 @@ mesh = SubResource("BoxMesh_t6lrr")
 shape = SubResource("BoxShape3D_2xun7")
 
 [node name="StarkCraftsLogo" parent="." instance=ExtResource("1_q1ybx")]
+
+[node name="Fire" parent="." instance=ExtResource("2_0nwgs")]

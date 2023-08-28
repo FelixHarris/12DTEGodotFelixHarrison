@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://h1tglpoqt4gt"]
+
+[ext_resource type="Texture2D" uid="uid://b4b5ubl61sj7o" path="res://fire.png" id="1_eys5q"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_m2waw"]
+lifetime_randomness = 0.35
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 0.0
+particle_flag_align_y = true
+gravity = Vector3(0, 4, 0)
+scale_min = 0.5
+scale_max = 2.0
+turbulence_noise_scale = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j5dvt"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.262745)
+albedo_texture = ExtResource("1_eys5q")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 1.59
+emission_operator = 1
+emission_texture = ExtResource("1_eys5q")
+rim_enabled = true
+rim = 0.47
+rim_tint = 0.0
+billboard_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4w8f2"]
+material = SubResource("StandardMaterial3D_j5dvt")
+orientation = 2
+
+[node name="Fire" type="GPUParticles3D"]
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_m2waw")
+draw_pass_1 = SubResource("PlaneMesh_4w8f2")

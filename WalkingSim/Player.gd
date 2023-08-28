@@ -30,7 +30,7 @@ func _unhandled_input(event):
 		$Camera3D.rotation.x = clamp($Camera3D.rotation.x, -1.2,1.2)
 
 
-#func _input(event):
+func _input(event):
 #	if event.is_action_pressed("pause"):
 #		if get_tree().paused:
 #			resume()
@@ -49,6 +49,7 @@ func check_ray_hit():
 			ray.get_collider().queue_free()
 			relics_destroyed += 1
 			collection_tracker.text = "RELICS : " + str(relics_destroyed) + " / 6"
+			$DestroySound.play()
 	else:
 		interaction_notifier.visible = false
 
