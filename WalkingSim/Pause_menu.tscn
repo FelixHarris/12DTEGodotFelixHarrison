@@ -50,3 +50,5 @@ text = "Resume"
 layout_mode = 2
 size_flags_vertical = 3
 text = "Quit"
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="."]

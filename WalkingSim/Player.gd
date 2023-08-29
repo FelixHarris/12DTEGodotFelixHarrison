@@ -13,7 +13,7 @@ var relics_destroyed = 0
 @onready var ray = $Camera3D/RayCast3D
 @onready var interaction_notifier = $Control/InteractionNotifier
 @onready var collection_tracker = $Control/MarginContainer/CollectionTracker
-
+@onready var walkSoundPlayer: AudioStreamPlayer = $AudioFootsteps
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -84,3 +84,22 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _process(delta):
+	if Input.get_vector("left", "right", "up", "down") and is_on_floor():
+		if !walkSoundPlayer.playing:
+			walkSoundPlayer.play()
+	else:
+		walkSoundPlayer.stop()
+
+func _on_Player_body_entered(body: PhysicsBody3D):
+	if body.is_in_group("enemy"):
+		print("Player entered enemy's collision area.")
+		get_tree().change_scene_to_file("res://death_screen.tscn")
+		
+
+
+func _on_area_3d_body_entered(body):
+	if body.is_in_group("enemy"):
+		print("Player entered enemy's collision area.")
+		get_tree().change_scene_to_file("res://death_screen.tscn")

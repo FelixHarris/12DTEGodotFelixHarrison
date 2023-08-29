@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dq1r51jas5l6p"]
+[gd_scene load_steps=6 format=3 uid="uid://dq1r51jas5l6p"]
 
-[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_s4yct"]
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_p6d3s"]
 [ext_resource type="FontFile" uid="uid://bc0w3ab8d8grf" path="res://feast-of-flesh-bb/fofbb_ital.otf" id="2_4hhb5"]
+[ext_resource type="AudioStream" uid="uid://bu4tdfecvch6d" path="res://Sounds/hitHurt.wav" id="3_fli36"]
 
 [sub_resource type="Gradient" id="Gradient_wnwmo"]
 
@@ -25,7 +26,7 @@ size_flags_vertical = 4
 texture = SubResource("GradientTexture1D_gvm88")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("1_s4yct")
+script = ExtResource("1_p6d3s")
 
 [node name="Main" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -140,6 +141,9 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("2_4hhb5")
 text = "Back"
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer"]
+stream = ExtResource("3_fli36")
 
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]

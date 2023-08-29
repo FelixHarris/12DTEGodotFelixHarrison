@@ -4,6 +4,7 @@ extends ColorRect
 @onready var play_button: Button = find_child("ResumeButton")
 @onready var quit_button: Button = find_child("QuitButton")
 @onready var pause_menu = $/root/World/Player/PauseMenu
+@onready var ButtonSoundPlayer: AudioStreamPlayer = $ButtonSound
 # Called when the node enters the scene tree for the first time.
 
 func _ready():

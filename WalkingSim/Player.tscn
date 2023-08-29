@@ -1,17 +1,23 @@
-[gd_scene load_steps=8 format=3 uid="uid://btof7qh5knxfb"]
+[gd_scene load_steps=10 format=3 uid="uid://btof7qh5knxfb"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_685um"]
 [ext_resource type="PackedScene" uid="uid://bjb2262o7gm6r" path="res://Pause_menu.tscn" id="2_nbmf4"]
 [ext_resource type="PackedScene" uid="uid://jl4bc5w1x6s0" path="res://Low_Poly_Flashlight_v01/Mesh/flashLight.fbx" id="2_uokgc"]
 [ext_resource type="Texture2D" uid="uid://dc8qis0n1r56w" path="res://Low_Poly_Flashlight_v01/Textures/flashlight_base_color.png" id="3_f4q54"]
 [ext_resource type="AudioStream" uid="uid://j5d7daady82d" path="res://Sounds/explosion (1).wav" id="5_h4yxg"]
+[ext_resource type="AudioStream" uid="uid://31ii167sh4w1" path="res://Sounds/Forest 2.wav" id="6_5fqxq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p2n6r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ntw2x"]
 albedo_texture = ExtResource("3_f4q54")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oqxb1"]
+radius = 0.651511
+height = 2.34095
+
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 3
 script = ExtResource("1_685um")
 
 [node name="PauseMenu" parent="." instance=ExtResource("2_nbmf4")]
@@ -87,5 +93,17 @@ text = "RELICS : 0 / 6"
 
 [node name="DestroySound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_h4yxg")
+
+[node name="AudioFootsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_5fqxq")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988319, 0)
+shape = SubResource("CapsuleShape3D_oqxb1")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 
 [editable path="Camera3D/flashLight"]

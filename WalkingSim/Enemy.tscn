@@ -4,19 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://bpjfitm435pxf" path="res://kenney_prototype-textures/PNG/Purple/texture_07.png" id="1_vw5xv"]
 [ext_resource type="PackedScene" uid="uid://cgv7l4h6ms5ep" path="res://skeleton.tscn" id="2_g15gy"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i6g8v"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1cvx"]
 albedo_texture = ExtResource("1_vw5xv")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j7k8i"]
 
-[node name="Enemy" type="CharacterBody3D"]
-script = ExtResource("1_ki828")
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i6g8v"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0, 0)
-shape = SubResource("CapsuleShape3D_i6g8v")
+[node name="Enemy" type="CharacterBody3D" groups=["enemy"]]
+collision_layer = 2
+script = ExtResource("1_ki828")
 
 [node name="PS1_Skeleton" parent="." instance=ExtResource("2_g15gy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
@@ -27,5 +24,9 @@ material_override = SubResource("StandardMaterial3D_a1cvx")
 mesh = SubResource("CapsuleMesh_j7k8i")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_i6g8v")
 
 [editable path="PS1_Skeleton"]

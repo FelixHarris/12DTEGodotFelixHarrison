@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://3vhwbkfth527"]
+[gd_scene load_steps=5 format=3 uid="uid://3vhwbkfth527"]
 
-[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_5hhta"]
 [ext_resource type="Texture2D" uid="uid://vgttbonhdc2b" path="res://ForestAI1.jpg" id="1_k0nrd"]
+[ext_resource type="Script" path="res://MainMenu.gd" id="2_pkajh"]
 [ext_resource type="FontFile" uid="uid://bc0w3ab8d8grf" path="res://feast-of-flesh-bb/fofbb_ital.otf" id="3_15ny0"]
+[ext_resource type="AudioStream" uid="uid://bu4tdfecvch6d" path="res://Sounds/hitHurt.wav" id="4_qfl3l"]
 
 [node name="MainMenu" type="Node"]
 
@@ -20,7 +21,7 @@ size_flags_vertical = 4
 texture = ExtResource("1_k0nrd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("1_5hhta")
+script = ExtResource("2_pkajh")
 
 [node name="Main" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -134,6 +135,9 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("3_15ny0")
 text = "Back"
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer"]
+stream = ExtResource("4_qfl3l")
 
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]
