@@ -29,4 +29,8 @@ mesh = SubResource("CapsuleMesh_j7k8i")
 transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_i6g8v")
 
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+
 [editable path="PS1_Skeleton"]
