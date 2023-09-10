@@ -50,6 +50,8 @@ func check_ray_hit():
 			relics_destroyed += 1
 			collection_tracker.text = "RELICS : " + str(relics_destroyed) + " / 6"
 			$DestroySound.play()
+			if relics_destroyed == 6:
+				get_tree().change_scene_to_file("res://victory_screen.tscn")
 	else:
 		interaction_notifier.visible = false
 
@@ -103,3 +105,6 @@ func _on_area_3d_body_entered(body):
 	if body.is_in_group("enemy"):
 		print("Player entered enemy's collision area.")
 		get_tree().change_scene_to_file("res://death_screen.tscn")
+
+
+
