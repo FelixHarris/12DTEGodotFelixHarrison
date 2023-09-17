@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq1r51jas5l6p"]
+[gd_scene load_steps=8 format=3 uid="uid://dq1r51jas5l6p"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_p6d3s"]
 [ext_resource type="FontFile" uid="uid://bc0w3ab8d8grf" path="res://feast-of-flesh-bb/fofbb_ital.otf" id="2_4hhb5"]
 [ext_resource type="AudioStream" uid="uid://bu4tdfecvch6d" path="res://Sounds/hitHurt.wav" id="3_fli36"]
+[ext_resource type="FontFile" uid="uid://ud0h0flo0dd5" path="res://feast-of-flesh-bb/fofbb_ital.ttf" id="3_g141r"]
+[ext_resource type="Script" path="res://AudioSlider.gd" id="4_xiy6p"]
 
 [sub_resource type="Gradient" id="Gradient_wnwmo"]
 
@@ -29,6 +31,7 @@ texture = SubResource("GradientTexture1D_gvm88")
 script = ExtResource("1_p6d3s")
 
 [node name="Main" type="Control" parent="CanvasLayer"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -95,7 +98,6 @@ theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
 [node name="Settings" type="Control" parent="CanvasLayer"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -125,6 +127,7 @@ theme_override_constants/margin_bottom = 16
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_constants/separation = 8
 
 [node name="Label" type="Label" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
@@ -134,6 +137,19 @@ theme_override_font_sizes/font_size = 32
 text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Master Volume" type="Label" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_g141r")
+text = " Master Volume"
+
+[node name="AudioSlider" type="HSlider" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+max_value = 1.0
+step = 0.1
+script = ExtResource("4_xiy6p")
+bus_name = "Master"
 
 [node name="ButtonSettingsBack" type="Button" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2

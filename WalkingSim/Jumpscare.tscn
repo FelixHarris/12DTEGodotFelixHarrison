@@ -7,3 +7,8 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0121694, 0, 0.0323725)
 texture = ExtResource("1_32rnb")
 script = ExtResource("2_8ix26")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
